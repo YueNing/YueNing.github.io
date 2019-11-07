@@ -43,10 +43,11 @@ After install IntelliJ and configure the system java environment.
 3.  Create a new class called SimpleAgent.java and then extend it from the negotiator.Agent class and implement the abstract method called chooseAction(). This method is called whenever our agent needs to perform an action. (i.e.: When the opponent has proposed a bid to the negotiation space, and it’s the turn of our SimpleAgent to either accept it or propose a new bid, then this method will be called.)
 
 <p align="center">
-	<img width="530" height="340" src="https://i.loli.net/2019/11/08/OjIv1iJEWnBA2RC.jpg" />
+	<img width="490" height="340" src="https://i.loli.net/2019/11/08/OjIv1iJEWnBA2RC.jpg" />
 	&nbsp;&nbsp;&nbsp;
-	<img width="390" height="340"  src="https://i.loli.net/2019/11/08/D4xwMWqEYXNclvb.jpg" />
+	<img width="350" height="340"  src="https://i.loli.net/2019/11/08/D4xwMWqEYXNclvb.jpg" />
 </p>
+
 <p align="center">
 <em>Configuration used for developing the Agent</em>
 </p>
@@ -173,6 +174,7 @@ public class SimpleAgent extends Agent {
 } 
 ```
 </details>  
+
 
 Then compile the project get the SimpleAgent class, open the GUI of Genius, `Java -jar genius-9.1.11.jar` add the new Agent use class file. (Figure Add New Agent)
 
