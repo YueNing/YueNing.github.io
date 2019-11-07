@@ -1,5 +1,5 @@
 ---
-title: genius-installation
+title: Genius User Tutorial
 date: 2019-11-06 23:23:47
 tags:
         - ANAC
@@ -20,6 +20,7 @@ Genius is a Java-based negotiation platform to develop general negotiating agent
 
 ## Installation
 
+<!--more--> 
 ## Requirements
 
 - [Java Runtime Environment 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
