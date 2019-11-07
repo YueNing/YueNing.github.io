@@ -5,10 +5,14 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - npm install hexo-generator-sitemap --save
+
 install:
   - npm install
 
 script:
+  - hexo clean
   - hexo g
 
 after_script:

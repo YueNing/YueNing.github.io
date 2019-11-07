@@ -98,3 +98,7 @@ deploy:
   type: git
   repo: git@github.com:da0mao/da0mao.github.io.git
   branch: master
+
+# sitemap
+sitemap:
+    path: sitemap.xml
