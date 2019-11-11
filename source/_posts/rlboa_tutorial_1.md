@@ -26,6 +26,8 @@ RLBOA（Reinforcement Learning，Bidding Strategy，Opponents model， Acceptanc
 
 采用OpenAI开发的Gym强化学习框架，降低扩展的难度。
 
+<!--more-->
+
 ## 概念细节（RLBOA）
 
 ### 观察空间
