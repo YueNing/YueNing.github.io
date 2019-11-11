@@ -38,13 +38,13 @@ RLBOA（Reinforcement Learning，Bidding Strategy，Opponents model， Acceptanc
 在框架RLBOA中，观察空间采用的是均匀离散化的效用空间（spaced utility bins） - 通过映射结果空间（outcome space）到其上而获得，具体的计算方式如下公式所示。
 
 $$
-ub(\omega_A^t) = \lfloor {U_A(\omega_A^t)\times N_{bins}} \rfloor \\
+ub(\omega_A^t) = \lfloor {U_A(\omega_A^t)\times N_{bins}} \rfloor \\\\
 ub(\omega_B^t) = \lfloor {U_B(\omega_B^t)\times N_{bins}} \rfloor
 $$
 
 1. $U_A(.)$： 代理A的效用函数，$N_{bins}$ 是bin（一个选框，效用范围）的数目，如图1绿色框所示。
 
-2. $\lfloor \rfloor$ ： 下取整函数即取底符号，$\lfloor x \rfloor = \max \left \{n\in \mathbb{Z} \mid n\leq x \right \}$
+2. $\lfloor \rfloor$ ： 下取整函数即取底符号，$\lfloor x \rfloor = \max \\{n\in \mathbb{Z} \mid n\leq x \\}$
 
 3. $ub(\omega_A)$： RLBOA 代理的出价效用点。
 
@@ -57,7 +57,7 @@ $$
 	<em>图1</em>
 </p>
 
-观察空间则为 $$s_t = \{ub(\omega_A^t), ub(\omega_B^t), ub(\omega_A^{t-1}), ub(\omega_B^{t-1}), t \}$$
+观察空间则为 $$s_t = \\{ub(\omega_A^t), ub(\omega_B^t), ub(\omega_A^{t-1}), ub(\omega_B^{t-1}), t \\}$$
 
 包含有四个效用点和一个时间点。
 
