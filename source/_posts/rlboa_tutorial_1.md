@@ -42,11 +42,11 @@ ub(\omega_A^t) = \lfloor {U_A(\omega_A^t)\times N_{bins}} \rfloor \\
 ub(\omega_B^t) = \lfloor {U_B(\omega_B^t)\times N_{bins}} \rfloor
 $$
 
-1. $U_A(\cdot)$ 代理A的效用函数，$N_{bins}$ 是bin（一个选框，效用范围）的数目，如图1绿色框所示。
+1. $U_A(.)$： 代理A的效用函数，$N_{bins}$ 是bin（一个选框，效用范围）的数目，如图1绿色框所示。
 
-2. $\lfloor \rfloor$ 下取整函数即取底符号，$\lfloor x \rfloor = \max\{n\in \mathbb{Z} \mid n\leq x\}$
+2. $\lfloor \rfloor$ ： 下取整函数即取底符号，$\lfloor x \rfloor = \max \left \{n\in \mathbb{Z} \mid n\leq x \right \}$
 
-3. $ub(\omega_A)$ RLBOA 代理的出价效用点。
+3. $ub(\omega_A)$： RLBOA 代理的出价效用点。
 
 结果如下图所示
 
