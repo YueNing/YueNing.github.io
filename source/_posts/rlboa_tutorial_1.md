@@ -1,7 +1,7 @@
 ---
 title: RLBOA 探索01
 date: 2019-11-11 14:54:47
-mathjax: true
+katex: true
 tags:
 	- Platform
 	- Negmas
