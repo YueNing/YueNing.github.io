@@ -7,8 +7,6 @@ cache:
 
 before_install:
   - npm install hexo-generator-sitemap --save
-  - npm i hexo-renderer-marked
-  - npm un hexo-renderer-markdown-it-plus
 
 install:
   - npm install
