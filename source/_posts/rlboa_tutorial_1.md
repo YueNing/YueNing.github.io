@@ -17,7 +17,7 @@ categories:
 
 本文是在[NEGMAS][2]仿真软件中基于 [RLBOA][1]框架实现强化学习算法系列教程的第一篇。
 
-## NEGMAS 和RLBOA的简介
+## NEGMAS 和 RLBOA 的简介
 
 NEGMAS 是一个协商多代理系统的开源Python库，通过模拟商业行为，并在其上进行谈判代理的开发。类似Genius（基于Java实现的用于学术研究的谈判仿真系统）。具体请参考文档或者github仓库。
 
@@ -73,7 +73,7 @@ $$
 
 ### 优化方法
 
-考虑到优化方法的算法实现不包含在Gym Env的设计中，为强化学习算法的实现部分，在这里就不作具体说明，会在完成Gym Env设计后，基于RLBOA框架实现强化学习的算法中做详细解释。
+优化方法的算法实现不包含在Gym Env的设计中，为强化学习算法的实现部分，在这里就不作具体说明，会在完成Gym Env设计后，基于RLBOA框架实现强化学习的算法中做详细解释。
 
 ## Gym Env 设计
 
@@ -81,7 +81,7 @@ $$
 
 ### 空间实现
 
-观察空间，考虑到观察空间采用的是离散效用值，所以可以直接通过继承gym.spaces.Discrete 来实现，考虑到未出价时的观察空间需要一个特殊的符号标记（无法直接采用0，0代表的是第一个效用bin），所以需要加入 no_op 函数，返回一个特殊的标记，这里可以设为 None。
+观察空间，考虑到观察空间采用的是离散效用值，所以可以直接通过继承gym.spaces.Discrete 来实现，未出价时的观察空间需要一个特殊的符号标记（无法直接采用0，0代表的是第一个效用bin），所以需要加入 no_op 函数，返回一个特殊的标记，这里可以设为 None。
 
 示例代码如下：
 
@@ -105,9 +105,9 @@ from collections import OrderedDict
 
 class  Dict(gym.spaces.Dict):
 
-def  no_op(self):
-	return OrderedDict([(k, space.no_op())
-		for k, space in  self.spaces.items()])
+	def  no_op(self):
+		return OrderedDict([(k, space.no_op())
+			for k, space in  self.spaces.items()])
 ```
 
 总结空间设计，其实采用的都为线性空间对单个参数进行表述，RLBOA 框架设计之除就考虑到了空间的数值表示，兼容不同强化学习算法的实现和训练。
